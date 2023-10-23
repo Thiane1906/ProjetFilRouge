@@ -19,6 +19,7 @@ class CoursResource extends JsonResource
             "module"=>$this->module->libelle,
             "semestre"=>$this->semestre->libelle,
             "professeur"=>$this->user->name,
+            "idProf"=>$this->user->id,
             "Etat"=>$this->etat,
             "Classes" => $this->classes->map(function($c) {
                 return [

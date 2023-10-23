@@ -22,7 +22,7 @@ class SessionResource extends JsonResource
             "duree"=>$this->duree,
             "Salle"=>SalleResource::make($this->salle),
             "coursClasse"=>CoursResource::make(coursClasseResource::make($this->coursClasse)->cours),
-            "classes"=>CoursResource::make(coursClasseResource::make($this->coursClasse)->Classes)
+            // "classes"=>CoursResource::make(coursClasseResource::make($this->coursClasse)->Classes)
         ];
     }
 }
